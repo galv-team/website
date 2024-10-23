@@ -1,44 +1,47 @@
 ---
-title: Goldydocs
+title: Galv
+date: 2024-10-23
 ---
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+{{< blocks/cover title="Welcome to Galv: a Metadata Secretary for Battery Science" image_anchor="top" height="full" >}}
+<a class="btn btn-lg btn-primary me-3 mb-4" href="{{% param live_server_url %}}">
+  Check it out <i class="fas fa-rocket ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="{{% relref "/docs" %}}">
+  Learn more <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
+<p class="lead mt-5">
+All your cycler data at your fingertips: experiment output, cell details, schedule information, and more...
+</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 
 {{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
-
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+Galv is a platform for managing Battery Cycler test data. 
+Keep your experimental data packaged alongside the experimental metadata so you always know which machine did what to which cell.
 {{% /blocks/lead %}}
 
 
 {{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-folder-open" title="Organise your data" %}}
+Keep your data together where you can get it from anywhere.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fas fa-circle-info" title="Easily view metadata" %}}
+Which machine <i class="fas fa-microscope"></i>  
+
+did what <i class="fas fa-clipboard-list"></i>  
+
+to which cell? <i class="fas fa-battery-empty"></i>
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fas fa-rocket" title="Check it out!" %}}
+We run a [live demo server]({{% param live_server_url %}}) where you can try Galv.
+
+You'll have a 100MB file limit and we wipe it on the 3rd of every month.
 {{% /blocks/feature %}}
 
 
@@ -46,32 +49,38 @@ For announcement of latest features etc.
 
 
 {{% blocks/section %}}
-This is the second section
+Components
 {.h1 .text-center}
+
+Galv is made of three main components:
+- **Galv-Server**: the backend server that manages the data
+- **Galv-Client**: the frontend client that you interact with
+- **Galv-Harvester**: the data collection tool that sends data to the server
+
+We also have a [Python API]({{% param python_api %}}).
 {{% /blocks/section %}}
 
+
+{{% blocks/section color="dark" %}}
+How do I get in on this?
+{.h1 .text-center}
+
+{{% /blocks/section %}}
 
 {{% blocks/section type="row" %}}
+{{% blocks/feature icon="fas fa-rocket" title="Check it out!" %}}
+We run a [live demo server]({{% param live_server_url %}}) where you can try Galv.
 
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
+You'll have a 100MB file limit and we wipe it on the 3rd of every month.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fas fa-graduation-cap" title="Read a tutorial" url="tutorial/" %}}
+Learn to use Galv with an easy-to-follow tutorial. We even provide the data.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
+
+{{% blocks/feature icon="fas fa-book-open" title="Read the docs" url="docs/" %}}
+Take a deep dive with our comprehensive documentation.
 {{% /blocks/feature %}}
 
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
 {{% /blocks/section %}}
