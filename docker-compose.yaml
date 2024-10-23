@@ -3,10 +3,10 @@ version: "3.8"
 services:
 
   site:
-    image: docsy/docsy-example
-    build:
-      context: .
-    command: server
+    image: floryn90/hugo:ext-alpine
+#    build:
+#      context: .
+    command: server --poll 700ms --bind 0.0.0.0
     ports:
       - "1313:1313"
     volumes:
