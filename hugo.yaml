@@ -1,5 +1,8 @@
-baseURL: https://example.docsy.dev
-title: Goldydocs
+baseURL: https://galv-team.github.io/galv-website/
+title: Galv
+
+#RelativeURLs: true
+#CanonifyURLs: true
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -46,27 +49,27 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    title: Galv
     params:
-      description: A Docsy example site
-  # cSpell:disable
-  'no':
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
-    params:
-      description: Docsy er operativsystem for skyen
-      time_format_default: 02.01.2006
-      time_format_blog: 02.01.2006
-  fa:
-    languageDirection: rtl
-    languageName: "فارسی (Persian)"
-    contentDir: content/fa
-    title: "اسناد گلدی"
-    params:
-      description: "یک نمونه برای پوسته داکسی"
-      time_format_default: 2006.01.02
-      time_format_blog: 2006.01.02
+      description: Documentation for the Galv Battery Data project.
+#  # cSpell:disable
+#  'no':
+#    languageName: Norsk
+#    contentDir: content/no
+#    title: Gulldoks
+#    params:
+#      description: Docsy er operativsystem for skyen
+#      time_format_default: 02.01.2006
+#      time_format_blog: 02.01.2006
+#  fa:
+#    languageDirection: rtl
+#    languageName: "فارسی (Persian)"
+#    contentDir: content/fa
+#    title: "اسناد گلدی"
+#    params:
+#      description: "یک نمونه برای پوسته داکسی"
+#      time_format_default: 2006.01.02
+#      time_format_blog: 2006.01.02
   # cSpell:enable
 
 markup:
@@ -116,24 +119,31 @@ params:
   # The version number for the version of the docs represented in this doc set.
   # Used in the "version-banner" partial to display a version number for the
   # current doc set.
-  version: 0.0
+  version: 0.1
 
   # A link to latest version of the docs. Used in the "version-banner" partial to
   # point people to the main doc site.
-  url_latest_version: https://example.com
+  url_latest_version: https://galv-team.github.io/galv-website/
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/google/docsy-example
+  github_repo: https://github.com/galv-team/galv-website/
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/google/docsy
+  github_project_repo: https://github.com/galv-team/galv-frontend/
+  github_backend_repo: https://github.com/galv-team/galv-backend/
+  github_harvester_repo: https://github.com/galv-team/galv-harvester/
+
+  # An optional link to the project website.
+  live_server_url: https://galv-frontend-dev.fly.dev/
+
+  python_api: https://pypi.org/project/galv/
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
 
   # Uncomment this if your GitHub repo does not have "main" as the default branch,
   # or specify a new value if you want to reference another branch in your GitHub links
-  github_branch: main
+  github_branch: develop
 
   # Google Custom Search Engine ID. Remove or comment out to disable search.
   gcs_engine_id: d72aa9b2712488cc3
@@ -145,8 +155,8 @@ params:
   prism_syntax_highlighting: false
 
   copyright:
-    authors: Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-    from_year: 2018
+    authors: The Chancellor, Masters and Scholars of the University of Oxford, and the 'Galv' Developers | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+    from_year: 2024
 
   # User interface configuration
   ui:
@@ -169,9 +179,9 @@ params:
       enable: true
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
-        Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+        Glad to hear it! If you want to leave more detailed suggestions, <a href="https://github.com/galv-team/galv-website/issues/new">tell us how we can improve</a>.
       'no': >-
-        Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+        Sorry to hear that. Please <a href="https://github.com/galv-team/galv-website/issues/new">tell us how we can improve</a>.
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
@@ -182,32 +192,32 @@ params:
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: User mailing list
-        url: https://example.org/mail
+      - name: Contact us
+        url: mailto:oxfordbatterymodelling@gmail.com
         icon: fa fa-envelope
-        desc: Discussion and help from your fellow users
-      - name: Twitter
-        url: https://example.org/twitter
-        icon: fab fa-twitter
-        desc: Follow us on Twitter to get the latest news!
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
+        desc: Send an email to the Galv developers
+      - name: Use Galv
+        url: https://galv-frontend-dev.fly.dev/
+        icon: fa fa-battery-full
+        desc: Check out the public instance of Galv
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
-      - name: GitHub
-        url: https://github.com/google/docsy
+      - name: Docs GitHub
+        url: https://github.com/galv-team/galv-website/
         icon: fab fa-github
-        desc: Development takes place here!
-      - name: Slack
-        url: https://example.org/slack
-        icon: fab fa-slack
-        desc: Chat with other project developers
-      - name: Developer mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discuss development issues around the project
+        desc: GitHub repository for this website
+      - name: Frontend GitHub
+        url: https://github.com/galv-team/galv-frontend/
+        icon: fas fa-door-open
+        desc: GitHub repository for the Galv frontend
+      - name: Backend GitHub
+        url: https://github.com/galv-team/galv-backend/
+        icon: fas fa-industry
+        desc: GitHub repository for the Galv backend
+      - name: Harvester GitHub
+        url: https://github.com/galv-team/galv-harvester/
+        icon: fas fa-rotate
+        desc: GitHub repository for the harvester program
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
