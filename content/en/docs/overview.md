@@ -1,48 +1,31 @@
 ---
 title: Overview
-description: Here's where your user finds out if your project is for them.
+description: >
+  Galv is a Metadata Secretary for Battery Science. 
+  It helps you manage your battery experiments.
 weight: 1
 ---
 
 {{% pageinfo %}}
 
-This is a placeholder page that shows you how to use this template site.
+You can start exploring Galv by diving into the demo instance at [{{% param live_server_url %}}]({{% param live_server_url %}}).
 
 {{% /pageinfo %}}
 
-The Overview is where your users find out about your project. Depending on the
-size of your docset, you can have a separate overview page (like this one) or
-put your overview contents in the Documentation landing page (like in the Docsy
-User Guide).
-
-Try answering these questions for your user in this page:
-
 ## What is it?
 
-Introduce your project, including what it does or lets you do, why you would use
-it, and its primary goal (and how it achieves it). This should be similar to
-your README description, though you can go into a little more detail here if you
-want.
+Battery science is a complex field.
+You'll have collected a lot of data on a lot of different cells, probably of different types.
+You'll probably have used a variety of equipment to collect that data.
+And all that data might be in many different formats.
 
-## Why do I want it?
+Galv helps you manage all that complexity.
+It helps you keep track of the cells you've used, the equipment you've used, and the schedules you've run.
+It helps you package all that data and metadata together, and it helps you keep track of how it all fits together.
 
-Help your user know if your project will help them. Useful information can
-include:
+When it's time to collaborate, share, or publish your work, Galv is there for you.
+Collaborate and share resources within Galv immediately, or export your data and metadata in a format that's easy to share with others and archive for publication.
 
-- **What is it good for?**: What types of problems does your project solve? What
-  are the benefits of using it?
+## Where do I start?
 
-- **What is it not good for?**: For example, point out situations that might
-  intuitively seem suited for your project, but aren't for some reason. Also
-  mention known limitations, scaling issues, or anything else that might let
-  your users know if the project is not for them.
-
-- **What is it _not yet_ good for?**: Highlight any useful features that are
-  coming soon.
-
-## Where should I go next?
-
-Give your users next steps from the Overview. For example:
-
-- [Getting Started](/docs/getting-started/): Get started with $project
-- [Examples](/docs/examples/): Check out some example code!
+Check out the [Getting Started]({{% ref "/docs/tutorials/getting-started" %}}) guide to get set up with Galv.
