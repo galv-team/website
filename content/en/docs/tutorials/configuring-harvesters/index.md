@@ -34,6 +34,8 @@ When we create the Harvester, we'll need to know the URL of the Galv API, and we
 
 The URL of the Galv API is shown in the text at the top of the Harvesters page.
 
+![Getting API URL](api-url.png "Getting API URL")
+
 ## Getting the API Token
 
 You access your API Tokens through your user profile.
