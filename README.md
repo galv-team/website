@@ -9,6 +9,7 @@ This approach doesn't require you to install any dependencies other than [Docker
 
 To run, use `docker-compose up` from the root of the project. 
 It will build the image and start the container, then you can access the website at `http://localhost:1313`.
+Note: If user gets a `permission denied` type of error, it is suggested to change the permissions on the directory to read/write/execute state. Alternatively, in `docker-compose.yaml` file, change the launch command to `server --poll 700ms --bind 0.0.0.0 --noBuildLock`.
 
 The container will watch for changes in the files and automatically rebuild the site.
 To support Windows (WSL), we use polling (`--poll 700ms`) to watch for changes rather than the default filesystem watcher.
